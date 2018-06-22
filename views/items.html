@@ -1,0 +1,19 @@
+<h3>{{name}} Store</h3>
+
+<div class="row itemList">
+  <div id="mS-{{type}}" class="col-sm-4 well" ng-repeat="(image, type) in itemService.drumsticks">
+    <p>Material: {{type}}</p>
+    <p>Quantity: <span class="quantity">{{sticks.quantity}}</span></p>
+    <p>Price: {{sticks.price}}</p>
+  </div>
+  <div id="mS-{{type}}" class="col-sm-4 well" ng-repeat="(image, type) in itemService.cymbals">
+    <p>Type: {{type}}</p>
+    <p>Quantity: {{cymbals.quantity}}</p>
+    <p>Price: {{cymbals.price}}</p>
+  </div>
+  <div id="mS-{{type}}" class="col-sm-4 well" ng-repeat="(image, type) in itemService.snares">
+    <p>Material: {{type}}</p>
+    <p>Quantity: {{snares.quantity}}</p>
+    <p>Price: {{snares.price}}</p>
+  </div>
+</div>
